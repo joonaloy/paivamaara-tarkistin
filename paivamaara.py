@@ -1,4 +1,5 @@
 def pvm(p):
+    #erittelee inputin päiviin kuukausiin ja vuosiin
     pv=""
     k=""
     v=""
@@ -9,13 +10,14 @@ def pvm(p):
     pv=int(pv)
     k=int(k)
     v=int(v)
-
+    #karkausvuosi tarkistus
     if v%400==0 and v%100==0:
         kv=1
     elif v%4==0 and v%100!=0:
         kv=1
     else:
         kv=0
+    #tarkistaa onko päivä suurempi kun mahdollista
     if k==1 or k==3 or k==5 or k==7 or k==8 or k==10 or k==12:
         if pv<32:
             print(pv,k,v,"On oikea päivämäärä")
