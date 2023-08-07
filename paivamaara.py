@@ -1,9 +1,3 @@
-#def pvm(p):
-#    pm = list(p)
-#    pm.insert(2," ")
-#    pm.insert(5," ")
-#    return "".join(pm)
-#print(pvm("14062006"))
 def pvm(p):
     pv=""
     k=""
